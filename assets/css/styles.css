@@ -127,6 +127,7 @@ img{
   position: fixed;
   top: 0;
   left: 0;
+  margin-bottom: 7px;
   z-index: var(--z-fixed);
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
@@ -153,6 +154,7 @@ img{
     background-color: var(--second-color);
     transition: .5s;
   }
+
 }
 .nav__item{
   margin-bottom: var(--mb-4);
@@ -208,8 +210,8 @@ img{
 }
 .home__title{
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-1);
-  margin-top: -40px;
+  margin-bottom: 6px;
+  margin-top: 10px;
 }
 .home__title-color{
   color: var(--first-color);
@@ -217,18 +219,19 @@ img{
 .home__title-color-1{
   color: var(--second-color);
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 600;
   font-family: 'Poppins', sans-serif;
+  align-self: flex-start;
 }
 .home__social{
   display: flex;
   flex-direction: column;
+
 }
 .home__social-icon{
   width: max-content;
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
-  margin-top: -70px;
   font-size: 2rem;
   color: var(--second-color);
 }
@@ -242,15 +245,14 @@ img{
 .home__social-icon:hover{
   color: var(--first-color);
 }
-.home__img{
+
+.home__img img{
+  display: flex;
   position: absolute;
-  right: 20px;
-  bottom: 0;
-  top: 70px;
-  width: 250px;
+  left: 650px;
+  bottom: 100px;
+  width: 300px;
 }
-
-
 
 /*BUTTONS*/
 .button{
@@ -261,6 +263,7 @@ img{
   font-weight: var(--font-semi);
   border-radius: 1.5rem;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .button:hover{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
@@ -623,7 +626,7 @@ footer p{
   }
   .home__social{
     padding-top: 0;
-    padding-bottom: 2.5rem;
+    padding-bottom: 3rem;
     flex-direction: row;
     align-self: flex-end;
   }
@@ -632,8 +635,8 @@ footer p{
     margin-right: var(--mb-4);
   }
   .home__img{
-    width: 440px;
-    bottom: 15%;
+    width: 350px;
+    bottom: 10%;
   }
 
   .about__container, .skills__container{
